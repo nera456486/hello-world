@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     return (
-        <nav style={{ padding: "10px", backgroundColor: "#fefefe" }}>
-            <a href="/">Home</a> | <a href="/about">About</a> | <a href="/contact">Contact</a>
+        <nav style={{ padding: "10px" }}>
+            <Link to="/">Home</Link> | 
+            <Link to="/about">About</Link> | 
+            <Link to="/contact">Contact</Link>
         </nav>
     );
 };
